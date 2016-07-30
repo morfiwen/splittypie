@@ -39,12 +39,8 @@
   {{#nav-link-to "event.transactions"}}Transactions{{/nav-link-to}}
 </ul>
 
-{{#if isMobile}}
-  <div class="event-container">
-    {{outlet}}
-  </div>
-{{else}}
-  {{liquid-outlet class="event-container"}}
-{{/if}}
+<div class="event-container">
+  {{outlet}}
+</div>
 
 {{add-transaction-button event=model}}
